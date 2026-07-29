@@ -18,7 +18,7 @@
 
 /datum/storage/medical_belt/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
 	. = ..()
-	set_holdable(list(
+	set_holdable(can_hold_list = list(
 		/obj/item/bikehorn/rubberducky,
 		/obj/item/blood_filter,
 		/obj/item/blood_scanner,
@@ -33,7 +33,6 @@
 		/obj/item/clothing/mask/surgical,
 		/obj/item/clothing/neck/stethoscope,
 		/obj/item/construction/plumbing,
-		/obj/item/crowbar/power/paramedic,
 		/obj/item/dnainjector,
 		/obj/item/extinguisher/mini,
 		/obj/item/flashlight/pen,
@@ -80,7 +79,7 @@
 		// NOVA EDIT ADDITION START
 		/obj/item/clothing/suit/toggle/labcoat/nova/surgical_gown,
 		/obj/item/hypospray/mkii,
-		/obj/item/storage/hypospraykit/,
+		/obj/item/storage/hypospraykit,
 		/obj/item/reagent_containers/cup/vial,
 		/obj/item/weaponcell/medical,
 		/obj/item/handheld_soulcatcher,
@@ -404,8 +403,8 @@
 		/obj/item/clothing/neck/heretic_focus,
 		/obj/item/codex_cicatrix,
 		/obj/item/eldritch_potion,
-		/obj/item/food/grown/poppy, // Used to regain a Living Heart.
-		/obj/item/food/grown/harebell, // Used to reroll targets
+		/obj/item/food/grown/flower/poppy, // Used to regain a Living Heart.
+		/obj/item/food/grown/flower/harebell, // Used to reroll targets
 		/obj/item/melee/rune_carver,
 		/obj/item/melee/sickly_blade,
 		/obj/item/organ, // Organs are also often used in rituals.
